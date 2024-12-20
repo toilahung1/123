@@ -1,0 +1,51 @@
+/* Styling for the vertical navigation */
+nav {
+    width: 200px; /* Chiều rộng của thanh nav */
+    background-color: #333; /* Màu nền của thanh nav */
+    height: 100vh; /* Chiều cao của thanh nav bằng với chiều cao của màn hình */
+    position: fixed; /* Định vị thanh nav cố định */
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none; /* Loại bỏ các dấu chấm đầu dòng */
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px; /* Khoảng cách giữa các mục menu */
+    
+}
+
+
+nav ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân của link */
+    color: #fff; /* Màu của văn bản trong link */
+    display: block; /* Hiển thị block để nó chiếm toàn bộ chiều rộng của li */
+}
+
+nav ul li a:hover {
+    background-color: #444; /* Màu nền của link khi hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.login-menu {
+    position: fixed;
+    top: -17px;
+    right: 0;
+    width: 400px; /* Chiều rộng của menu bằng chiều rộng của trang */
+    background-color: #fff; /* Màu nền cho menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow nhẹ cho menu */
+    z-index: 1000; /* Đặt trên các phần tử khác */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước của phần tử */
+}
